@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+:after,
+:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header,
+main {
+  width: 1024px;
+  margin: 0px auto;
+  font-size: 10px;
+  font-family: "Pretendard-Regular";
+}
+
+div {
+  display: block;
+}
+
+/* @media all and (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+} */
+
+header {
+  margin: 0px auto 20px;
+}
+
+.inner .header-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 1024px;
+  height: 80px;
+  letter-spacing: -0.33px;
+}
+
+.inner .header-container .brand {
+  display: flex;
+  align-items: center;
+  height: 63px;
+}
+
+.inner .header-container .brand .logo {
+  height: 63px;
+}
+
+.inner .header-container .search {
+  position: relative;
+  width: 1024px;
+}
+
+.inner .header-container .search .search-container {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(55, 175, 10);
+  border-radius: 30px;
+  padding-left: 14px;
+  left: 250px;
+  top: -20px;
+  width: 400px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(247 247 247) 0px 0px 0px 1px inset;
+}
+
+.inner .header-container .search .search-box {
+  display: inline-block;
+}
+
+.inner .header-container .search-box input {
+  width: 300px;
+  font-size: 16px;
+  letter-spacing: -0.33px;
+  border: none;
+  outline: none;
+}
+
+.inner .header-container .search .btn {
+  position: relative;
+  right: 3px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.inner .top #sign {
+  position: relative;
+  /* width: 1024px; */
+  height: 50px;
+  left: 100px;
+  margin: 0px auto;
+}
+
+.inner .header-container #sign .body {
+  margin: 0px auto;
+  width: 100px;
+}
+
+.inner .header-container #sign .body a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+}
+
+.division-bar {
+  position: relative;
+  top: -20px;
+  margin: 0px;
+  width: initial;
+  border-bottom: 0.5px solid rgb(110, 110, 110);
+}
+
+/* .main {
+  width: 1024px;
+} */
+
+#signup h1 {
+  /* width: 600px; */
+  text-align: center;
+  margin: 0px auto 20px;
+  font-size: 30px;
+}
+
+.main .signup-container {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  height: 1000px;
+  margin: 0px auto;
+}
+
+.main .signup-container #signup-form {
+  margin: 0px auto;
+}
+
+.main .signup-container .input-group {
+  font-size: 18 px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  margin: 0px auto;
+}
+
+/**
+*********************
+* signin.handlebars *
+*********************
+*/
+
+/** main.handlebars */
+.category-container {
+  width: 764px;
+  margin: 0px auto;
+}
+
+.category-title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 10px;
+}
+
+.category-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 3rem; */
+  border: 2px solid rgba(44, 88, 24, 0.5);
+  border-radius: 7px;
+  background-color: rgba(128, 255, 82, 0.5);
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  /* margin: 0px 10px 0px; */
+}
+
+#fastfood {
+  grid-column: 2 / -1;
+}

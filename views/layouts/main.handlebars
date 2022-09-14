@@ -1,0 +1,65 @@
+<html>
+
+  <head>
+    <title>Omuk</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Seongtae Lee" />
+    <meta name="description" content="오늘 먹을 먹거리 추천 및 사이트 연동" />
+    <meta
+      name="keywords"
+      content="먹거리, 점심메뉴, 저녁메뉴, 저메추, 점메추"
+    />
+    <link rel="stylesheet" href="/stylesheet/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="inner top">
+        <div class="header-container">
+          <div class="brand">
+            <a href="/">
+              <img class="logo" src="/image/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="search">
+            <div class="search-container">
+              <form id="search-form" action="/search" method="post">
+                <div class="search-box">
+                  <label for="search-menu"></label>
+                  <input
+                    id="search-menu"
+                    type="text"
+                    name="menu"
+                    placeholder="검색어를 입력해주세요."
+                  />
+                </div>
+                <button id="search-btn" type="submit" class="btn">검색</button>
+              </form>
+            </div>
+          </div>
+          <div id="sign">
+            {{#if user}}
+              <div class="sign auth">
+                <div class="user">{{user.dataValues.nickname}}님 안녕하세요.</div>
+                <a href="/auth/logout">로그아웃</a>
+              </div>
+            {{else}}
+              <div class="sign body">
+                <a href="/auth/signin">로그인/회원가입</a>
+              </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="division-bar"></div>
+    <main>
+      <div class="inner main">
+        {{{body}}}
+      </div>
+    </main>
+  </body>
+
+</html>
