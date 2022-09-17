@@ -1,4 +1,4 @@
-import { DataTypes, Model } from "Sequelize";
+import { DataTypes, Model } from "sequelize";
 
 class Store extends Model {
   static init(sequelize) {
