@@ -1,10 +1,9 @@
 import winston from "winston";
 import "winston-daily-rotate-file";
 import path from "path";
-import { fileURLToPath } from "url";
 
 const { createLogger, format, transports } = winston;
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const __dirname = path.resolve();
 
 const levels = {
   error: 0,

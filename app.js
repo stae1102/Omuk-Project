@@ -8,8 +8,7 @@ import express from "express";
 
 // 기타 라이브러리
 import path from "path";
-import { fileURLToPath } from "url";
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const __dirname = path.resolve();
 import dotenv from "dotenv";
 dotenv.config();
 import favicon from "serve-favicon";
